@@ -121,4 +121,15 @@ Human human =  new Human("김철수")
 객체화 가능 여부: 추상 클래스는 불가, 일반 클래스 가능
 
 
+ JAVA Compile 과정
+![image](https://user-images.githubusercontent.com/108508922/230772778-3d56b979-7974-41d5-9318-d32e2885953d.png)
+1. 개발자가 .java 파일을 생성한다
+2. build를 한다
+3. java compiler의 javac 명령어를 통한 바이트코드(.class) 생성
+4. class loader를 통해 jvm내로 로드
+5. 실행엔진을 통해 컴퓨터가 읽을 수 있는 기계어로 해석되어(각 운영체제에 맞는 기계어)Runtime Data Area에 배치
+
+10) compiler vs interpreter 차이
+
+
 
