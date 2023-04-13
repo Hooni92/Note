@@ -1,26 +1,58 @@
-### TCP/IP Network
-![image](https://user-images.githubusercontent.com/108508922/228227771-5bc58c1a-32ac-40e7-a163-0a2e649c9e4c.png)
-- 커널의 구성요소를 어플리케이션을 추상화할때 File요소로 추상화 하는데 이때 네트워크에 관련된 File을 Socket이라 부른다.
-- Socket이란? TCP/IP 소켓이라 했을때 user mode application process가 접근할 수 있도록 파일형식으로 추상화한 interface를 Socket이라 한다.
-- 식별자: MAC (Hardware 수준), IP주소(Network수준), Port번호(Transport 수준)
-
-### MAC주소, IP주소, Port 번호가 식별하는것
-![image](https://user-images.githubusercontent.com/108508922/228231689-04068427-4d31-4f06-b31b-e268058c3871.png)
-
-- MAC주소: NIC(NetworkInterfaceCard, LAN 카드)에 대한 식별자. MAC주소는 변경가능한가? : Yes
-- IP주소: Host에 대한 식별자. Host: 인터넷에 연결된 컴퓨터. IP주소는 몇개나 있을까? :N개, NIC 한개에 여러개 바인딩 가능하다.
-- Port번호: 프로세스 식별자, 서비스 식별자, 인터페이스 식별자 와 같이 업무관점에 따라 다르게 불려온다.
-
-### Host, Switch, Network
-![image](https://user-images.githubusercontent.com/108508922/228235475-2a8756f6-10be-4aed-b130-c9fe186f0873.png)
-- Host : Computer + Network  
-- End-Point : 인터넷에 연결된 컴퓨터가 Host인데 이때 컴퓨터가 Netwokr 이용 주체이면 End-Point라 한다. ex) Peer, Server, Client
-- Switch : 인터넷에 연결된 컴퓨터가 Host인데 이때 컴퓨터가 Netwokr 자체를 이루면 Switch라 한다. ex) Router, FW, IPS.  
-- MAC 주소를 Swithching 하면 L2 Swithch, IP주소를 Swithching 하면 L3 Swithch, Port번호를 Swithching 하면 L4 Swithch, Http를 Swithching 하면 L7 Swithch.
-- Network : Internet이란? Router + DNS
-
+### 운영체제
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 컴퓨터 하드웨어
+- 프로세서 (Processor) :계산
+1) CPU
+2) 그래픽카드(GPU) 
+3) 응용 전용 처리장치 등
+
+- 메모리 (Meomory) : 저장
+1) 주기억장치
+2) 보조 기억장치 등
+
+- 주변장치 : 입,출력,네트워크 장치
+1) 키보드/ 마우스
+2) 모니터, 프린터
+3) 네트워크 모뎀 등
+
+## 프로세서 (Processor)
+- 컴퓨터의 두뇌(중앙처리장치)
+1) 연산 수행
+2) 컴퓨터의 모든 동작 제어
+
+![image](https://user-images.githubusercontent.com/108508922/231697799-d2bb5a28-3dde-4da4-ad60-ae346e1e9f30.png)
+
+## 레지스터 (Register)
+- 프로세서 내부에 있는 메모리
+1) 프로세서가 사용할 데이터 저장
+2) 컴퓨터에서 가장 빠른 메모리
+
+- 레지스터의 종류
+1) 용도에 따른 분류: 전용 레지스트, 범용 레지스터
+2) 사용자가 정보 변경 가능 여부에 따른 분류: 사용자 가시 레즈서터, 사용자 불가시 레지스터<br>
+2-1.사용자 가시 레지스터
+![image](https://user-images.githubusercontent.com/108508922/231698925-53bb9e43-1e8a-4811-b0be-81e50e9f39c9.png)<br> 
+2-2.사용자 불가시 레지스터
+![image](https://user-images.githubusercontent.com/108508922/231699881-b1111caf-3c51-4c22-a9bd-514a1167c339.png)<br>
+3) 저장하는 정보의 종류에 따른 분류: 데이터 레지스터, 주소 레지스터, 상태 레지스터
+
+**알고 가자**
+- DR(Data Register): 함수 연산에 필요한 데이터를 저장. 값, 문자 등을 저장하므로 산술 연산자나 논리연산에 사용하며, 연산 결과로 플래그 값을 저장한다.(플래그란?- 
+- AR(Address Register)
+- PC(Program Counter)
+- IR(Instruction Register)
+- ACC(ACCumulator)
+- MAR(Memory Address Register)
+- MBR(Memory Buffer Register)
+
+## 프로세서의 동작
+![image](https://user-images.githubusercontent.com/108508922/231701642-2faa90e1-fa34-434c-a4f4-c03283ff56bc.png)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+### 자료구조
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 자료구조란 무엇인가?
 - 자료구조란? :  현실의 체계를 컴퓨터 체게에 효율적 데이터 관리하는법.
 - 자료구조의 목적: 큰 데이터를 효율적으로 관리하는 것.
@@ -74,6 +106,35 @@
 - 처음, 끝, 중간에 엘리먼트를 추가/삭제하는 기능
 - 리스트에 데이터가 있는지를 체크하는 기능
 - 리스트의 모든 데이터에 접근할 수 있는 기능
+
+## 언어별 비교
+- C: 리스트 지원하지 않음.
+- JS: 배열이 리스트 이기도 하다. splice(index, num) -> index부터 num뒤까지 자운다.
+- Python : 리스트가 배열 이기도 하다. pop(index) index의 값을 지운다.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### TCP/IP Network
+![image](https://user-images.githubusercontent.com/108508922/228227771-5bc58c1a-32ac-40e7-a163-0a2e649c9e4c.png)
+- 커널의 구성요소를 어플리케이션을 추상화할때 File요소로 추상화 하는데 이때 네트워크에 관련된 File을 Socket이라 부른다.
+- Socket이란? TCP/IP 소켓이라 했을때 user mode application process가 접근할 수 있도록 파일형식으로 추상화한 interface를 Socket이라 한다.
+- 식별자: MAC (Hardware 수준), IP주소(Network수준), Port번호(Transport 수준)
+
+### MAC주소, IP주소, Port 번호가 식별하는것
+![image](https://user-images.githubusercontent.com/108508922/228231689-04068427-4d31-4f06-b31b-e268058c3871.png)
+
+- MAC주소: NIC(NetworkInterfaceCard, LAN 카드)에 대한 식별자. MAC주소는 변경가능한가? : Yes
+- IP주소: Host에 대한 식별자. Host: 인터넷에 연결된 컴퓨터. IP주소는 몇개나 있을까? :N개, NIC 한개에 여러개 바인딩 가능하다.
+- Port번호: 프로세스 식별자, 서비스 식별자, 인터페이스 식별자 와 같이 업무관점에 따라 다르게 불려온다.
+
+### Host, Switch, Network
+![image](https://user-images.githubusercontent.com/108508922/228235475-2a8756f6-10be-4aed-b130-c9fe186f0873.png)
+- Host : Computer + Network  
+- End-Point : 인터넷에 연결된 컴퓨터가 Host인데 이때 컴퓨터가 Netwokr 이용 주체이면 End-Point라 한다. ex) Peer, Server, Client
+- Switch : 인터넷에 연결된 컴퓨터가 Host인데 이때 컴퓨터가 Netwokr 자체를 이루면 Switch라 한다. ex) Router, FW, IPS.  
+- MAC 주소를 Swithching 하면 L2 Swithch, IP주소를 Swithching 하면 L3 Swithch, Port번호를 Swithching 하면 L4 Swithch, Http를 Swithching 하면 L7 Swithch.
+- Network : Internet이란? Router + DNS
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
