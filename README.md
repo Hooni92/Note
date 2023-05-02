@@ -89,19 +89,25 @@
 2. 단순하다.
 
 ### 자료구조 - List
+
 - List의 가장큰 특징 2가지
 1. 순서가 정해져있다. (Array보다 순서를 좀더 중요시한다)
 2. 중복해서 저장 할 수 있다. 
 (Array 또한 순서가 있고 중복이 가능하지만 List의 기능이 많다)
+
 ## List 자료 추가
+
 ![image](https://user-images.githubusercontent.com/108508922/229151492-6a04b3b9-849b-46e8-b7a5-82bf5e7145d3.png)
 - Array에서는 기존 값을 제거하고 새로운 값(50)을 넣는다.
 - List에서는 기존 값을 뒤로 보내고 새로운값을 해당 번호에 삽입한다.
+
 ## List 자료 삭제
+
 ![image](https://user-images.githubusercontent.com/108508922/229152018-8bf11b29-7b54-47c6-ab39-7580e27e459d.png)
 - Array에서는 데이터를 삭제하고 빈공간으로 남아있다.
 - List에서는 해당 데이터 삭제시 뒷 데이터가 자리를 매꾼다.
 - 따라서 List는 연속적인 데이터를 이루기 때문에 데이터의 유무를 확인하지 않아도 되는 장점이 있다.
+
 ## List 기능
 - 처음, 끝, 중간에 엘리먼트를 추가/삭제하는 기능
 - 리스트에 데이터가 있는지를 체크하는 기능
@@ -110,7 +116,73 @@
 ## 언어별 비교
 - C: 리스트 지원하지 않음.
 - JS: 배열이 리스트 이기도 하다. splice(index, num) -> index부터 num뒤까지 자운다.
-- Python : 리스트가 배열 이기도 하다. pop(index) index의 값을 지운다.
+- Python: 리스트가 배열 이기도 하다. pop(index) index의 값을 지운다.
+- Java: new ArrayList(); new LinkedList();로 두가지의 리스트 형태의 객체를 생성 할 수 있다.
+
+## ArrayList vs LinkedList 차이
+- Array List: 추가/삭제가 느리다. 인덱스 조회가 빠르다
+- Linked List: 추가/삭제가 빠르다. 인덱스 조회가 느리다
+
+## Array List 개념
+
+경우1) 값 50을 index 1에 추가하려고 하는 경우<br>
+1) ![image](https://user-images.githubusercontent.com/108508922/235608156-977d4a84-bef4-49de-87c7-1309fe655fcf.png)<br>
+2) ![image](https://user-images.githubusercontent.com/108508922/235608202-f32d6130-2d60-40df-8904-e7839fc459d8.png)<br>
+3) ![image](https://user-images.githubusercontent.com/108508922/235608247-13bb9521-693f-42b4-bd2d-42e9ecdd7fdf.png)<br>
+4) ![image](https://user-images.githubusercontent.com/108508922/235608302-5f3023d6-ca95-4698-a835-19a97d7cbd7a.png)<br>
+5) ![image](https://user-images.githubusercontent.com/108508922/235608342-2cc04b5f-bac1-4fdc-b03a-d128faecdef7.png)<br>
+
+경우2) index 2값을 삭제하는경우<br>
+1) ![image](https://user-images.githubusercontent.com/108508922/235608529-c58eef12-3bb6-42e9-98a2-12beda342cf4.png)<br>
+2) ![image](https://user-images.githubusercontent.com/108508922/235608607-1ae0cc98-92eb-4754-9cd8-067dfb2017b3.png)<br>
+3) ![image](https://user-images.githubusercontent.com/108508922/235608647-8e94abdf-4a40-4cf9-b570-e64f7fa5854a.png)<br>
+4) ![image](https://user-images.githubusercontent.com/108508922/235608674-c7a374cd-e6a8-45a3-8c46-56ad7b34e1ac.png)<br>
+
+- 단점) 값을 넣거나 뺼때 시간이 많이 걸린다.
+- 장점) index 값을 이용하여 값을 가져오는데 굉장히 빠르다.
+
+## Array List API 사용법
+
+1) insert 
+- list 생성시 값 넣기<br>
+![image](https://user-images.githubusercontent.com/108508922/235609744-7d0d8169-80a7-4868-878c-d5ef91b796a7.png)<br>
+- 인덱스 1 에 값 넣기<br>
+![image](https://user-images.githubusercontent.com/108508922/235609872-04d7efdd-d562-433d-8215-ed8decb77200.png)<br>
+ 
+ 2) remove 
+- index 2값 삭제하기<br>
+![image](https://user-images.githubusercontent.com/108508922/235610118-53b94aaf-779c-45d6-88b9-566e957e95e5.png)<br>
+
+3) size
+- 몇개의 값을 리스트가 가지고 있는지 확인하기 <br>
+![image](https://user-images.githubusercontent.com/108508922/235610639-448efdef-02b3-4b13-bc9a-816957a33f6e.png)<br>
+
+4) Iteration (반복)<br>
+- ![image](https://user-images.githubusercontent.com/108508922/235611045-0a4528e7-d473-4af5-a5ec-9b394a806eec.png)<br>
+- ![image](https://user-images.githubusercontent.com/108508922/235611375-a2e6c9b0-e77f-4124-86b7-c6e547497de4.png)<br>
+- ![image](https://user-images.githubusercontent.com/108508922/235611944-5c557a71-726a-43a4-8f24-6d0e008eeafc.png)<br>
+- ![image](https://user-images.githubusercontent.com/108508922/235612563-3e85a7a5-4ab3-4df1-87c7-251574f5882e.png)<br>
+
+## Array List 구현1- 객체 생성하기
+
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235616028-7ee59142-7e0b-4776-8729-466bd4ccc060.png)<br>
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235616185-565d533f-56d9-4637-9c81-ea46d00d6e53.png)<br>
+
+## Array List 구현 2 - addLiat 함수 구현
+
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235616388-4c874001-597e-429a-8850-74b9a471a432.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235616598-97535c7c-ef84-4b2e-951f-97ac4d73fe22.png)<br>
+
+## Array List 구현 3 - add 함수 구현
+1) Main 클래스
+![image](https://user-images.githubusercontent.com/108508922/235616922-d1c4e445-0d3e-4e76-8384-79439742ddb1.png)
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
