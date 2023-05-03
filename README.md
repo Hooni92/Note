@@ -184,7 +184,7 @@
 ![image](https://user-images.githubusercontent.com/108508922/235834215-9d2fc9db-4041-4740-a84f-6dd27aefd37c.png)<br>
 
 2) ArrayList 클래스<br>
-![image](https://user-images.githubusercontent.com/108508922/235834297-354cf65c-20f6-411a-9782-3d6cb5b8cd22.png)<br>
+![image](https://user-images.githubusercontent.com/108508922/235932660-d1015a21-1d62-4535-b114-998a8ee17e61.png)
 
 ## Array List 구현 4 - toString
 
@@ -214,9 +214,76 @@
 1) Main 클래스<br>
 ![image](https://user-images.githubusercontent.com/108508922/235870872-e9d51cb3-d9f8-4fe0-93cf-f94b34eb483f.png)<br>
 
-
 2) ArrayList 클래스<br>
 ![image](https://user-images.githubusercontent.com/108508922/235870804-10e8df75-31e2-417c-8ac7-c8c34e5c1e8a.png)<br>
+
+## Array List 구현 8 - size 및 indexOf
+
+**size**
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235933400-b9e6eecb-2d2f-441a-a585-1fb3820c535a.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235933438-3a9b66fe-3a01-4aa9-a50f-5ce0434c317b.png)<br>
+
+**indexOf**
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235933706-158be03e-b8e0-492f-a9fc-ce0a63de4e39.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235934272-f711723b-8612-4902-b0ed-ca6b42d84109.png)
+
+## Array List 구현 9 - iterator next hasNext
+
+** next **
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235936448-e4d237dd-7f32-4574-8be5-b3e8f54bd719.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235936347-b5e2722e-71bf-4f02-8841-a66e8361912a.png)<br>
+
+** hasNext **
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235938511-39e6e565-1017-4ecb-a959-462c884bfb6a.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235938899-9adb1b6d-0d7a-4e50-ad07-5e01ac5c346a.png)<br>
+
+## Array List 구현 10 - Iterator previous hasPrevious
+
+** previous **
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235940027-220aad8c-d1b7-4f35-b3e4-3921904f40cd.png)<br>
+
+2) ArrayList 클래스<br>
+ ![image](https://user-images.githubusercontent.com/108508922/235940056-aaa0a2d2-00ec-446c-8f51-bea55170c663.png)<br>
+ 
+ ** hasPrevious **
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235940533-7d3978cd-746c-45f5-b87b-43bd80adc1f5.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235940628-d1a0b18a-4d38-4ec4-afe8-68fbc4ec1219.png)<br>
+
+## Array List 구현 11 - Iterator add & remove
+
+** add **
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235942358-b27481af-c70d-4076-9c1b-140f2ea88eb0.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235942511-bb910af1-ff02-4ff7-97ae-6805fe0d73a7.png)<br>
+
+** remove **
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235946345-e30cda50-ec07-4c00-ad8d-fd96a2c95266.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235946426-51bbb280-5565-4032-9a08-32d783fb712f.png)<br>
+
+## Linked list 개념 1 - 
+
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
