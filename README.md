@@ -1,4 +1,4 @@
-### 운영체제
+# 운영체제
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 컴퓨터 하드웨어
 - 프로세서 (Processor) :계산
@@ -50,7 +50,7 @@
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-### 자료구조
+# 자료구조
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 자료구조란 무엇인가?
@@ -74,11 +74,11 @@
 - element의 개수를 카운트 하기때문에 length 값=4가 된다. 단, 값을 설정하지 않은 값도 length 에 포함된다.
 ![image](https://user-images.githubusercontent.com/108508922/229148383-9de79a58-30cc-4bca-a904-105eb6ce160f.png)
 ## Iteration(반복)
-- while문
-![image](https://user-images.githubusercontent.com/108508922/229148820-ee86b4d7-3bfb-48de-801b-184e86a04b16.png)
+- while문<br>
+![image](https://user-images.githubusercontent.com/108508922/229148820-ee86b4d7-3bfb-48de-801b-184e86a04b16.png)<br>
 - while 문의 단점은 반복을 i=0, numbers.length, i++ 구문이 떨어져있어 중간에 다른 코드가 들어가면 헷갈릴 수 있다. 
-- for문
-![image](https://user-images.githubusercontent.com/108508922/229149125-9c1519a2-e741-4449-ba1b-b5fe0b32bd3d.png)
+- for문<br>
+![image](https://user-images.githubusercontent.com/108508922/229149125-9c1519a2-e741-4449-ba1b-b5fe0b32bd3d.png)<br>
 - while문보다 보기가 편하다, 반복횟수를 알고있을때 좋다.
 ## 배열의 장,단점
 - 배열의 단점
@@ -178,10 +178,45 @@
 2) ArrayList 클래스<br>
 ![image](https://user-images.githubusercontent.com/108508922/235616598-97535c7c-ef84-4b2e-951f-97ac4d73fe22.png)<br>
 
-## Array List 구현 3 - add 함수 구현
-1) Main 클래스
-![image](https://user-images.githubusercontent.com/108508922/235616922-d1c4e445-0d3e-4e76-8384-79439742ddb1.png)
+## Array List 구현 3 - add 및 addFirst함수 구현
 
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235834215-9d2fc9db-4041-4740-a84f-6dd27aefd37c.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235834297-354cf65c-20f6-411a-9782-3d6cb5b8cd22.png)<br>
+
+## Array List 구현 4 - toString
+
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235835272-a7fe52dc-b0bc-4fff-8563-8143722b1836.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235835406-5c8770b7-6aea-43f2-a43a-eea5ec4d795f.png)
+
+## Array List 구현 5 - remove
+
+ 1) Main 클래스<br>
+ ![image](https://user-images.githubusercontent.com/108508922/235856791-11e8a801-4fa7-4fe4-b8ad-148ed815ca99.png)<br>
+
+ 2) ArrayList 클래스<br>
+ ![image](https://user-images.githubusercontent.com/108508922/235856888-d774218b-b35e-4ffe-a186-dddb50f74a00.png)<br>
+ 
+ ## Array List 구현 6- removeFirst,removeLast
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235860593-90f4f93f-5dd3-4db9-a2c4-608be14e4da6.png)<br>
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235860357-be06799d-3be3-433c-b912-bed8cade0c11.png)<br>
+
+## Array List 구현 7 -  get
+
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235870872-e9d51cb3-d9f8-4fe0-93cf-f94b34eb483f.png)<br>
+
+
+2) ArrayList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/235870804-10e8df75-31e2-417c-8ac7-c8c34e5c1e8a.png)<br>
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
