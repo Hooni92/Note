@@ -353,11 +353,30 @@
 ## Linked List 구현 2 - addFirst
 
 1)Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/236198546-1a94eff7-7215-4aaa-9b39-214bdee06d35.png)<br?
 
 2)Linked List 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/236198480-8be4e516-5756-4295-bad2-5c165af9d3d6.png)<br>
 
+## Linked List 구현 3 - addLast
 
+1)Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/236198698-ec67b350-62ad-468f-bc59-4631a802b943.png)<br>
 
+2)Linked List 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/236199377-55b71507-c36a-4a19-acec-7e994cc04f79.png)<br>
+
+## Linked List 구현 4 - node
+
+1) Main 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/236202007-e81158c3-08d3-455e-bb05-4f1f3e317b5e.png)<br>
+
+2) Linked List 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/236201927-80e3ba41-08b3-4bc8-9c9d-c2b446b63bec.png)<br>
+
+** Node는 LinkedList를 이용하는 사용자에게 보여서는 안된다. -> public 삭제
+
+## Linked List 구현 5 - add 
 
 
 
