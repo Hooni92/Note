@@ -281,7 +281,83 @@
 2) ArrayList 클래스<br>
 ![image](https://user-images.githubusercontent.com/108508922/235946426-51bbb280-5565-4032-9a08-32d783fb712f.png)<br>
 
-## Linked list 개념 1 - 
+## Linked list 개념 1 - 소개
+
+- RAM(Random Access Memory) : 메모리 각각의 주소에 접근할때 시간이 동일하다. 주소를 알고 있다면 굉장히 빠르게 가져올 수 있다.
+
+- ArrayList VS Linked List<br>
+![image](https://user-images.githubusercontent.com/108508922/236154140-71e7e19b-9059-4d57-9763-1866c6fb662e.png)<br>
+
+- Array List : 각각의 Element들이 연속적으로 붙어있다.
+- Linked List : 각각의 Element들이 연속적이지 않지만 Linked(연결)되어있다
+
+## Linked List 개념 2 - 구성<br>
+![image](https://user-images.githubusercontent.com/108508922/236154584-eb46eea3-77ea-4c55-b19c-74dcb2d1d3a3.png)<br>
+
+- Linked List는 element라는 말대신 node(마디,교점) or vertext(정점,꼭지점) 라는 용어를 사용한다.
+- node는 Data field와 Link field라는 두가지 변수를 가지고 있다.
+- 첫번째 노드가 무엇인가라는 데이터를 가지고 있는 Head field가 가지고있다.
+
+## Linked List 개념 3 - 데이터 추가
+
+** 기존 Linked List에 85 라는 노드 앞에 추가하기 **
+1) vertext라는 객체를 생성하여 input값(85)을 받는다<br>
+![image](https://user-images.githubusercontent.com/108508922/236157055-42c951ef-c05e-4ae7-9418-a3c9f00dafb9.png)<br>
+2) 생성된 temp의 다음 값이 무엇인지 입력해준다 (* 여기선 맨앞에 추가 하는것이므로 head를 가르킨다)<br>
+![image](https://user-images.githubusercontent.com/108508922/236157479-7b6299a5-f0f3-4852-8d33-c6f4e41c3d49.png)<br>
+3)head값을 수정해준다(*85가 맨 앞이므로 85값을 가르키게 한다)<br>
+![image](https://user-images.githubusercontent.com/108508922/236157954-ecdb3032-5334-479b-aa17-82bcaa43498c.png)<br>
+
+## Linked List 개념 4 - 중간에 추가 
+
+** 기존 Linked List에 90 값을 가진 노드를 중간에 추가하기 **
+1) List의 head를 통해서 첫번째 노드를 temp1에 담는다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236159676-caa99e7f-fb5f-4ae3-a8a1-cf831ef63044.png)<br>
+2) 반복문을 통하여 k-1번째(삽입하려는 곳의 이전 값)에 값을 tmep1에 담는다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236160288-69fe89e8-b6b4-4883-8b49-eda29fb9d629.png)<br>
+3)temp2에 k번째에 값을 넣는다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236160594-aab4fab3-fa2f-4054-8825-a81bee8decac.png)<br>
+4)새로운 노드를 만든다.(newVertex)<br>
+![image](https://user-images.githubusercontent.com/108508922/236160777-52f088c8-5b90-43c5-a84e-540a61d3e5b9.png)<br>
+5)temp1의 다음 링크를 새로운 로드를 가르키게 한다.<br> 
+![image](https://user-images.githubusercontent.com/108508922/236160877-58f3932a-e882-4098-a679-a54554d2262a.png)<br>
+6)새로운 노드의 다음링크를 tmep2를 가르키게한다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236161286-116376f7-ceef-4f86-a5ab-cd39289d568a.png)<br>
+
+## Linked List 개념 5 - 삭제
+
+1) cur라는 변수에 head를 담는다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236162231-b6f6671e-bd54-4d54-854a-6a3f00d9ddf8.png)<br>
+2) 반복을 통해서 변수 cur가 k-1번째를 가르키게 한다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236162661-2ed7ab17-04b1-481e-88eb-d1822d0897b4.png)<br>
+3) 삭제할값을 tobedeleted라는 변수에 담는다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236162825-63a37218-5494-40cd-b5dd-a4deb27d3fef.png)<br>
+4)cur의 다음값을 cur의 다음 다음값을 가르키게 한다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236163171-8e478ff3-aaae-4559-a573-5adf84b1268e.png)<br>
+5) 삭제할값을 삭제한다.<br>
+![image](https://user-images.githubusercontent.com/108508922/236163584-94f761e6-fb7c-4dda-8493-34dbe2ae202e.png)
+
+## Linked List 개념 6 - Array List VS Linked List<br>
+![image](https://user-images.githubusercontent.com/108508922/236166074-2c135af4-4ba0-4352-83ed-e7c2a54f014f.png)<br>
+
+- 추가적으로 Linked List는 포인터 또는 참조값으로 연결되어 있기때문에 메모리가 허용하는 한 리스트의 크기가 무한한다. 하지만 Array List는 배열을 사용하기 때문에 Array가 가지고 있는 크기에 제한되거나 메모리 낭비가 있을 수 있다.
+
+## Linked List 구현 1 - 객체생성
+
+1) Main 클래스<br>
+ ![image](https://user-images.githubusercontent.com/108508922/236169905-af279241-c10a-49b2-810d-41c85ddcf3cb.png)<br>
+
+2) LinkedList 클래스<br>
+![image](https://user-images.githubusercontent.com/108508922/236169953-61c5015f-b997-4c28-98f6-a154d6a40fb4.png)<br>
+
+## Linked List 구현 2 - addFirst
+
+1)Main 클래스<br>
+
+2)Linked List 클래스<br>
+
+
+
 
 
 
